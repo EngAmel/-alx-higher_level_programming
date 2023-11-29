@@ -5,4 +5,4 @@ def remove_char_at(str, n):
         new += chr(ch)
         if p == n:
             continue
-    print("{:s}".format(new), end="")
+    return new

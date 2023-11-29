@@ -5,4 +5,4 @@ for s in range(ord('z'), ord('a') - 1, -1):
         new += chr(s)
     else:
         new += chr(s - 32)
-print("{:s}".format(new))
+print("{:s}".format(new), end="")

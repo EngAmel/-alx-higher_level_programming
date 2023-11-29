@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
     new = ""
-    for ch in str:
-        new += chr(s)
-        if ch == n:
+    for ch, p in str:
+        new += chr(ch)
+        if p == n:
             continue
     print("{:s}".format(new), end="")

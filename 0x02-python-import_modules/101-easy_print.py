@@ -1,0 +1,2 @@
+import prin
+prin()

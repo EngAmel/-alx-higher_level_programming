@@ -7,4 +7,4 @@ if __name__ == "__main__":
     if(args):
         for elm in args:
             sum = sum + int(elm)
-    print("{}".format(sum))
+    print(sum)

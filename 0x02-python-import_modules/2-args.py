@@ -9,9 +9,9 @@ if __name__ == "__main__":
         print("{} arguments.".format(ln))
     else:
         if ln == 1:
-            print("{} argument".format(ln))
+            print("{} argument:".format(ln))
         else:
-            print("{} arguments".format(ln))
+            print("{} arguments:".format(ln))
         if args:
             for elm in args:
                 print("{}: {}".format(i, elm))

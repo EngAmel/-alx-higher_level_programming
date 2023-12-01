@@ -5,14 +5,14 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     ln = len(args)
     i = 1
-    if ln == 1:
-        print("{} argument".format(ln))
+    if ln == 0:
+        print("{} arguments.".format(ln))
     else:
-        print("{} arguments".format(ln), end="")
+        if ln == 1:
+            print("{} argument".format(ln))
+        else:
+            print("{} arguments".format(ln))
         if args:
-            print(":")
             for elm in args:
                 print("{}: {}".format(i, elm))
                 i += 1
-        else:
-            print(".")

@@ -8,4 +8,4 @@ def no_c(my_string):
         else:
             new += ch
         i += 1
-    print(new)
+    return new

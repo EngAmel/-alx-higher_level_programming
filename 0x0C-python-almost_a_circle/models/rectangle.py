@@ -6,6 +6,14 @@ from models.base import Base
 class Rectangle(Base):
     '''rectangle class'''
 
+    def __init__(self, width, height, x=0, y=0, id=None):
+        '''constructor'''
+        super().__init__(id)
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
+
     @property
     def width(self):
         '''__width -> width'''
@@ -49,11 +57,3 @@ class Rectangle(Base):
     def y(self, value):
         '''y setter'''
         self.__y = value
-
-    def __init__(self, width, height, x=0, y=0, id=None):
-        '''constructor'''
-        super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y

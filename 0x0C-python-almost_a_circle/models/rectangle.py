@@ -91,7 +91,12 @@ class Rectangle(Base):
     def display(self):
         '''desplay traingle'''
 
+        for z in range(self.y):
+            print("")
+
         for w in range(self.height):
+            for n in range(self.x):
+                print(" ", end="")
             for h in range(self.width):
                 print("#", end="")
             print("")

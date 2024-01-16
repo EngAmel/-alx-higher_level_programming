@@ -12,9 +12,13 @@ class Rectangle(Base):
         '''constructor'''
 
         super().__init__(id)
+        self.valid_int("width", width, False)
         self.__width = width
+        self.valid_int("height", height, False)
         self.__height = height
+        self.valid_int("x", x)
         self.__x = x
+        self.valid_int("y", y)
         self.__y = y
 
     @property

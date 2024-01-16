@@ -87,3 +87,11 @@ class Rectangle(Base):
         '''traingle area'''
 
         return self.width * self.height
+
+    def display(self):
+        '''desplay traingle'''
+
+        for w in range(self.height):
+            for h in range(self.width):
+                print("#", end="")
+            print("")

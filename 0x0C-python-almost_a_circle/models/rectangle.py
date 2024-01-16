@@ -107,3 +107,17 @@ class Rectangle(Base):
         return '[{}] ({}) {}/{} - {}/{}'.\
             format(type(self).__name__, self.id, self.x,
                    self.y, self.width, self.height)
+
+    def update(self, id=None, width=None, height=None, x=None, y=None):
+        '''update args'''
+
+        if id:
+            self.id = id
+        if width:
+            self.width = width
+        if height:
+            self.height = height
+        if x:
+            self.x = x
+        if y:
+            self.y = y
